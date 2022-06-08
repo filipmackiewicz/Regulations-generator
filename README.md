@@ -1,5 +1,5 @@
-# Login: admin <br/>
-Passowrd: admin
+> Login: admin
+> Passowrd: admin
 
 # PL
 ## [Regulations-generator](https://generator.filipmackiewicz.pl/)
