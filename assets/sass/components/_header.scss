@@ -1,0 +1,32 @@
+#header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px #FFF;
+    flex-direction: column;
+    background: #501BA8;
+
+    @include break(tablet-large) {
+        flex-direction: row;
+    }
+
+
+    &>a {
+        &>.logo {
+            padding: 30px;
+            height: 65px;
+        }
+    }
+
+
+    .heading {
+        flex-basis: 100%;
+        padding: 25px;
+        text-align: center;
+        color: #fff;
+        font-size: 32px;
+        font-family: $font-family;
+        font-weight: 500;
+    }
+
+}

@@ -1,0 +1,268 @@
+#form {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    min-height: 73vh;
+
+    .generator {
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        margin: 16px;
+        flex-basis: 50%;
+        background: transparent;
+        border-radius: 25px;
+        justify-content: center;
+    }
+
+    .form {
+        padding: 15px;
+
+        &__heading {
+            font-size: 48px;
+            color: $white;
+            text-align: center;
+
+            &>span {
+                font-weight: lighter;
+            }
+        }
+
+        .text {
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #fff;
+            line-height: 0.1em;
+            margin: 10px 0 20px;
+            margin-bottom: 50px;
+        }
+
+        .text>span {
+            background: #6021CA;
+            padding: 0 10px;
+        }
+
+        .inputs-text {
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: left;
+            margin-top: 40px;
+            margin-bottom: 25px;
+        }
+
+        .additional-textarea-delivery,
+        .additional-textarea-payment,
+        .additional-textarea-complaint,
+        .additional-textarea-special-transport,
+        .additional-textarea-guarantee,
+        .additional-textarea-selfpickup {
+            &>textarea {
+                width: 100%;
+                height: 200px;
+                resize: none;
+                background: #501BA8;
+                color: $white;
+                border-radius: 15px;
+                padding: 7px;
+            }
+        }
+
+        .additional-textarea-selfpickup {
+            display: flex;
+            flex-direction: column;
+
+            &>label {
+                color: $white;
+                margin: 15px 0px;
+            }
+
+            &>input {
+                color: $white;
+                background: #501BA8;
+                padding: 7px;
+                border: none;
+                border-radius: 15px;
+            }
+        }
+
+
+        &__tab {
+            display: none;
+            flex-direction: column;
+            min-height: 43vh;
+
+            .col {
+                display: flex;
+                justify-content: space-between;
+
+                &>label {
+                    color: $white;
+                    font-size: 14px;
+                    font-family: $font-family;
+                    color: $white;
+                    padding: 5px 0px;
+                    width: 100%;
+
+
+                    &>input {
+                        margin-right: 15px;
+                    }
+                }
+
+
+                &>input {
+                    width: auto;
+                    margin: 2px 0px;
+                    padding: 5px;
+                    border: solid 1px transparent;
+                    background: #501BA8;
+                    color: $white;
+                    border-radius: 15px;
+                    padding: 12px;
+                    margin-bottom: 12px;
+                }
+
+                &>input:invalid {
+                    border-color: #F00;
+                }
+            }
+
+            &>label {
+                color: $white;
+                font-size: 14px;
+                font-family: $font-family;
+                color: $white;
+                padding: 5px 0px;
+                width: 100%;
+
+
+                &>input {
+                    margin-right: 15px;
+                }
+            }
+
+
+            &>input {
+                width: auto;
+                margin: 2px 0px;
+                padding: 5px;
+                border: solid 1px transparent;
+                background: #501BA8;
+                color: $white;
+                border-radius: 15px;
+                padding: 12px;
+                margin-bottom: 12px;
+            }
+
+            &>input:invalid {
+                border-color: #F00;
+            }
+
+
+
+            &>input {
+                width: auto;
+                margin: 2px 0px;
+                padding: 5px;
+                border: solid 1px transparent;
+                background: #501BA8;
+                color: $white;
+                border-radius: 15px;
+                padding: 12px;
+                margin-bottom: 12px;
+            }
+
+            &>input:invalid {
+                border-color: #F00;
+            }
+        }
+
+        &__text {
+            color: $white;
+            font-size: 14px;
+            margin: 15px 0px;
+
+            @include break (tablet-large) {
+                font-size: 24px;
+            }
+
+        }
+
+
+        &__btn {
+            margin-top: 50px;
+            float: left;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            button {
+                background: #e63785 0 150px;
+                color: #ffffff;
+                border: none;
+                border-radius: 15px;
+                padding: 21px 60px;
+                font-size: 17px;
+                cursor: pointer;
+                transition: all .2s ease-in;
+            }
+
+            button:hover {
+                background: #2CAA65;
+            }
+        }
+
+        &__bullets {
+            margin-bottom: 40px;
+            position: relative;
+
+            .step {
+                height: 15px;
+                width: 15px;
+                margin: 0 7px;
+                background-color: #6021CA;
+                border: solid 1px #2CAA65;
+                border-radius: 50%;
+                display: inline-block;
+            }
+
+            .step.active {
+                background: #2CAA65;
+                border: solid 1px #2CAA65;
+            }
+
+            .step.finish {
+                background-color: #2CAA65;
+                border: solid 1px #2CAA65;
+                position: relative;
+            }
+
+            .step.finish::after {
+                content: "\f00c";
+                font-family: "FontAwesome";
+                color: #fff;
+                font-size: 9px;
+                position: absolute;
+                left: 22%;
+                top: 22%;
+            }
+        }
+
+        &__bullets::after {
+            content: '';
+            position: absolute;
+            top: 39%;
+            left: calc(50% - 70px);
+            width: 140px;
+            height: 3px;
+            background: #2CAA65;
+            z-index: -1;
+        }
+    }
+
+}

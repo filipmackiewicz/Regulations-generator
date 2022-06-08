@@ -1,0 +1,157 @@
+#generator {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 15px 0px 15px;
+    min-height: 75vh;
+
+
+    @include break (tablet) {
+        flex-direction: column;
+    }
+
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+
+        .heading-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 50%;
+
+            &__heading {
+                font-family: $font-family;
+                color: $white;
+                text-align: center;
+                font-weight: 800;
+                font-size: 48px;
+
+                &>span {
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .searchcompany {
+            flex-basis: 45%;
+
+            &>label {
+                color: $white;
+                font-family: $font-family;
+            }
+
+            &>input {
+                width: 88%;
+                margin: 15px 0px;
+                background: $white;
+                border: solid 1px $white;
+                color: #5E4E78;
+                padding: 15px;
+                border-radius: 12px;
+            }
+
+            &>input:focus,
+            input:focus-visible {
+                border: solid 1px $white;
+                outline: none;
+            }
+
+            &>input::-webkit-search-cancel-button {
+                display: none;
+            }
+
+        }
+    }
+
+
+    .hide {
+        display: none !important;
+    }
+
+    .companies {
+        display: flex;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+        overflow: auto;
+        height: 45vh;
+        justify-content: center;
+
+        .buttons {
+            flex-basis: 40%;
+            display: flex;
+            justify-content: center;
+            height: 10vh;
+            background: #501BA8;
+            margin: 5px;
+            border-radius: 12px;
+
+
+            &__first {
+                flex-basis: 99%;
+                // padding: 0px 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+
+                &>button {
+                    background: transparent;
+                    color: $white;
+                    border: none;
+                    border-radius: 15px;
+                    font-size: 17px;
+                    cursor: pointer;
+                    margin: 4px;
+                    flex-basis: 100%;
+                    transition: all .3s ease-in;
+                    padding: 37px;
+                    padding-left: 15px;
+                }
+
+                &>button:hover {
+                    background: #47159A;
+                }
+            }
+
+            &__second {
+                flex-basis: 1%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                &>button:first-child {
+                    background: #2CAA65;
+                    color: $white;
+                    border: none;
+                    border-radius: 15px;
+                    padding: 7px;
+                    font-size: 17px;
+                    cursor: pointer;
+                    margin: 4px;
+                    transition: all .3s ease-in;
+                }
+
+                &>button:hover {
+                    background: #17C767;
+                }
+
+                &>button:nth-child(2) {
+                    background: #D8348C;
+                    color: $white;
+                    border: none;
+                    border-radius: 15px;
+                    padding: 7px;
+                    font-size: 17px;
+                    cursor: pointer;
+                    margin: 4px;
+                    transition: all .3s ease-in;
+                }
+
+                &>button:nth-child(2):hover {
+                    background: #E64099;
+                }
+            }
+        }
+    }
+}

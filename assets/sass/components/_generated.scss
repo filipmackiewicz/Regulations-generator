@@ -1,0 +1,50 @@
+.generated-title {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.generated-title__text {
+    color: $white;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.generated-title__btn-copy {
+    background: #501BA8;
+    border-radius: 12px;
+    border: solid 1px #501BA8;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+.generated-title__btn-copy i {
+    color: $white;
+    padding: 8px;
+    font-size: 17px;
+}
+
+.generated-title__btn-copy:hover {
+    background: #36136e;
+    border: solid 1px #36136e;
+}
+
+.generated-title__btn-download {
+    background: #2CAA65;
+    border-radius: 12px;
+    border: solid 1px #2CAA65;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+.generated-title__btn-download i {
+    color: $white;
+    padding: 8px;
+    font-size: 17px;
+}
+
+.generated-title__btn-download:hover {
+    background: #1e7c48;
+    border: solid 1px #1a683d;
+}

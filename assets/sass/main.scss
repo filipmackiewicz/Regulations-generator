@@ -1,0 +1,19 @@
+//base
+@import './base/variables';
+@import './base/mixins';
+@import './base/fonts';
+@import './base/reset';
+
+
+//components
+@import './components/footer';
+@import './components/form';
+@import './components/generator';
+@import './components/header';
+@import './components/info';
+@import './components/login';
+@import './components/options';
+@import './components/result';
+@import './components/nav';
+@import './components/tooltip';
+@import './components/generated';

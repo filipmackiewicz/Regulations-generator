@@ -1,0 +1,53 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #551764;
+    border-radius: 26px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    font-family: $font-family;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #6021ca;
+
+    @include break(tablet) {
+        flex-direction: row;
+    }
+}
+
+h1 {
+    flex-basis: 100%;
+    padding: 25px;
+    text-align: center;
+    color: $white;
+    font-size: 35px;
+}
+
+.heading {
+    flex-basis: 100%;
+    padding: 25px;
+    margin-top: 25px;
+    text-align: center;
+    color: #fff;
+    font-size: 48px;
+    font-weight: 800;
+
+    &>span {
+        font-weight: 500;
+    }
+}
